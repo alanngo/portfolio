@@ -1,0 +1,8 @@
+@font-face {
+    font-family: consolas;
+    src: url('../fonts/Consolas.ttf');
+}
+
+.customText {
+    font-family: consolas;
+}
