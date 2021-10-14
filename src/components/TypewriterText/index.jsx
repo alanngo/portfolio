@@ -1,11 +1,7 @@
 
 import React from 'react';
-import "../../styles/Typewriter.css"
-const TypewriterText = ({children}) => 
-{
-    return (
-        <h1 className="typewriter customText" as="h1">{children}</h1>
-    )
-}
+
+import * as helper from "./logic"
+const TypewriterText = ({ children, as }) => (<>{helper.getTextType(as, children)}</>)
 
 export default TypewriterText;
