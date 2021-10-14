@@ -44,17 +44,27 @@ export const pages =
     {
         id: 0,
         link: "/projects",
-        color: "primary"
+        color: "warning"
     },
     {
         id: 1,
         link: "/education",
-        color: "success"
+        color: "danger"
     },
     {
         id: 2,
         link: "/resources",
-        color: "danger"
+        color: "success"
+    },
+    {
+        id: 3,
+        link: "/experiences",
+        color: "primary"
+    },
+    {
+        id: 3,
+        link: "/profile",
+        color: "secondary"
     },
 ]
 

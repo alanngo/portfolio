@@ -7,12 +7,22 @@ import HomePage from "./pages/HomePage"
 import Projects from './pages/Projects';
 import Education from './pages/Education';
 import Resources from './pages/Resources'
+import Experiences from './pages/Experiences'
+import Profile from './pages/Profile'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container } from 'react-bootstrap';
+import { 
+  Container, 
+  // Row, 
+  // Col, 
+  // Button 
+} from 'react-bootstrap';
+// import Text from "./components/Text"
 import Navigation from './components/Navigation'
+import "./App.css"
+
 const App = () => 
 (
-    <div className="App">
+    <>
       <Navigation />
       <Router>
         <Container fluid>
@@ -20,11 +30,14 @@ const App = () =>
             <Route path="/projects" component={Projects} />
             <Route path="/education" component={Education} />
             <Route path="/resources" component={Resources} />
+            <Route path="/experiences" component={Experiences}/>
+            <Route path="/profile" component={Profile}/>
             <Route path="/*" component={HomePage} />
           </Switch>
         </Container>
       </Router>
-    </div>
+
+    </>
 );
 
 export default App;
